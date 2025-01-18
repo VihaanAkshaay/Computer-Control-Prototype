@@ -1,7 +1,3 @@
-Here’s a draft for your README file:
-
----
-
 # **Computer Control Project**
 
 ## **Overview**
@@ -66,25 +62,10 @@ computer-control-project/
 2. Follow the interactive prompts to use the tools.
 
 ### **Example Commands**
-- Simulate typing text:
+- Command in Natural Language:
   ```
-  User: type_text Hello, world!
-  ```
-- Click on a random position in the bottom half of the screen:
-  ```
-  User: click_bottom_half
-  ```
-- Capture a screenshot:
-  ```
-  User: capture_screenshot
-  ```
-- Navigate to a webpage:
-  ```
-  User: go_to_webpage https://www.example.com
-  ```
-- Load and analyze an image:
-  ```
-  User: load_and_analyze_image path/to/image.png
+  User: can you open safari, go to https://codepen.io/rlacorne/pen/wvWJxM and click somewhere on the screen and then go to http://bigtyper.com/?txt= and click somewhere on the screen and type your favorite word with 1 second delay between each step  and finally take a screenshot please?
+
   ```
 
 ## **Contributing**
