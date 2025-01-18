@@ -1,0 +1,1 @@
+# Will be filled with functions to manage files and directories on the mac

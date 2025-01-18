@@ -1,3 +1,8 @@
+'''
+Supporting functions for the main script
+'''
+
+
 from PIL import Image
 import io
 
