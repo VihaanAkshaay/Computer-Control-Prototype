@@ -67,18 +67,3 @@ computer-control-project/
   User: can you open safari, go to https://codepen.io/rlacorne/pen/wvWJxM and click somewhere on the screen and then go to http://bigtyper.com/?txt= and click somewhere on the screen and type your favorite word with 1 second delay between each step  and finally take a screenshot please?
 
   ```
-
-## **Contributing**
-Contributions are welcome! Please follow these steps to contribute:
-1. Fork the repository.
-2. Create a new branch for your feature or bug fix.
-3. Submit a pull request.
-
-## **License**
-This project is licensed under the MIT License. See the `LICENSE` file for more details.
-
-## **Acknowledgments**
-- **PyAutoGUI**: For keyboard and mouse automation.
-- **Pillow**: For image handling.
-- **LangChain**: For tool integration and advanced language capabilities.
-- **GPT-4 Vision**: For image analysis and AI capabilities.
