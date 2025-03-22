@@ -38,7 +38,7 @@ computer-control-project/
 ### **Installation**
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/computer-control-project.git
+   git clone https://github.com/vihaanakshaay/computer-control-project.git
    cd computer-control-project
    ```
 
