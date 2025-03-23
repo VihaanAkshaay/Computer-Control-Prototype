@@ -1,13 +1,11 @@
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
 from computer_control_project.computer_tools import TypeTool
-import os
 import uvicorn
 from computer_control_project import prog
 
 app = FastAPI(title="Computer Control API")
 
-# Model for the type_text request
 class TypeTextRequest(BaseModel):
     query: str
 
@@ -21,7 +19,6 @@ async def read_root():
 @app.post("/type_text")
 async def type_text(request: TypeTextRequest):
     try:
-        # Create an instance of the TypeTool and execute the command
         tool = TypeTool()
         result = tool._run(request.query)
         return result
@@ -31,12 +28,11 @@ async def type_text(request: TypeTextRequest):
 @app.post("/chat")
 async def chat_message(request: ChatRequest):
     try:
-        # Call the function in prog.py that processes the user input.
         responses = prog.process_user_input(request.query)
         return {"responses": responses}
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
-    
+
 @app.post("/reset_chat")
 async def reset_chat():
     try:
@@ -52,5 +48,6 @@ async def look_at_chat_history():
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 
-if __name__ == "__main__":
-    uvicorn.run("api_server:app", host="0.0.0.0", port=8000, reload=True)
+def main():
+    # Remove reload=True for production packaging
+    uvicorn.run("myserver.main:app", host="0.0.0.0", port=8000)

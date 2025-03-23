@@ -1,16 +1,20 @@
 aiohappyeyeballs==2.4.4
 aiohttp==3.11.11
 aiosignal==1.3.2
+altgraph==0.17.4
 annotated-types==0.7.0
 anyio==4.8.0
+-e git+https://github.com/VihaanAkshaay/Computer-Control-Prototype@9fdf243c89da22ebf6803b42a84cf16d11dbf54f#egg=api_server&subdirectory=../../backend
 appscript==1.3.0
 async-timeout==4.0.3
 attrs==24.3.0
 certifi==2024.12.14
 charset-normalizer==3.4.1
+click==8.1.8
 dataclasses-json==0.6.7
 distro==1.9.0
 exceptiongroup==1.2.2
+fastapi==0.115.11
 filelock==3.16.1
 frozenlist==1.5.0
 fsspec==2024.12.0
@@ -20,6 +24,7 @@ httpx==0.28.1
 httpx-sse==0.4.0
 huggingface-hub==0.27.1
 idna==3.10
+importlib_metadata==8.6.1
 jiter==0.8.2
 jsonpatch==1.33
 jsonpointer==3.0.0
@@ -33,11 +38,13 @@ langgraph-checkpoint==2.0.10
 langgraph-sdk==0.1.51
 langsmith==0.2.10
 lxml==5.3.0
+macholib==1.16.3
 marshmallow==3.25.1
 MouseInfo==0.1.3
 msgpack==1.1.0
 multidict==6.1.0
 mypy-extensions==1.0.0
+-e git+https://github.com/VihaanAkshaay/Computer-Control-Prototype@9fdf243c89da22ebf6803b42a84cf16d11dbf54f#egg=myserver&subdirectory=../../backend
 numpy==1.26.4
 openai==1.59.7
 orjson==3.10.14
@@ -49,6 +56,8 @@ pydantic==2.10.5
 pydantic-settings==2.7.1
 pydantic_core==2.27.2
 PyGetWindow==0.0.9
+pyinstaller==6.12.0
+pyinstaller-hooks-contrib==2025.1
 PyMsgBox==1.0.9
 pynput==1.7.7
 pyobjc==11.0
@@ -220,9 +229,11 @@ requests==2.32.3
 requests-toolbelt==1.0.0
 rubicon-objc==0.5.0
 safetensors==0.5.2
+shiv==1.0.8
 six==1.17.0
 sniffio==1.3.1
 SQLAlchemy==2.0.37
+starlette==0.46.1
 tavily-python==0.5.0
 tenacity==9.0.0
 tiktoken==0.8.0
@@ -232,6 +243,6 @@ transformers==4.48.0
 typing-inspect==0.9.0
 typing_extensions==4.12.2
 urllib3==2.3.0
+uvicorn==0.34.0
 yarl==1.18.3
-fastapi==0.95.0
-uvicorn==0.22.0
+zipp==3.21.0

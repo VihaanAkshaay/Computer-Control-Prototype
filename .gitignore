@@ -1,1 +1,22 @@
-ego_control/
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*.so
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+*.egg
+*.pyz
+
+# Virtual environments
+venv/
+.venv/
+
+# OS or editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
