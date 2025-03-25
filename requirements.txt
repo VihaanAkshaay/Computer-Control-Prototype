@@ -4,7 +4,6 @@ aiosignal==1.3.2
 altgraph==0.17.4
 annotated-types==0.7.0
 anyio==4.8.0
--e git+https://github.com/VihaanAkshaay/Computer-Control-Prototype@9fdf243c89da22ebf6803b42a84cf16d11dbf54f#egg=api_server&subdirectory=../../backend
 appscript==1.3.0
 async-timeout==4.0.3
 attrs==24.3.0
@@ -44,7 +43,6 @@ MouseInfo==0.1.3
 msgpack==1.1.0
 multidict==6.1.0
 mypy-extensions==1.0.0
--e git+https://github.com/VihaanAkshaay/Computer-Control-Prototype@9fdf243c89da22ebf6803b42a84cf16d11dbf54f#egg=myserver&subdirectory=../../backend
 numpy==1.26.4
 openai==1.59.7
 orjson==3.10.14
