@@ -48,7 +48,7 @@ computer-control-project/
 2. Set up a virtual environment:
    ```bash
    python -m venv env
-   source env/bin/activate  # On Windows, use `env\Scripts\activate`
+   source env/bin/activate  
    ```
 
 3. Install dependencies:
@@ -96,9 +96,9 @@ python -c "import myserver.main; print('Success!')"
 ```bash
 shiv . \        
   --compressed \
-  --output-file api_server.pyz \
-  --entry-point myserver.main:main \
-  --site-packages `python -c "import site; print(site.getsitepackages()[0])"
+  -o api_server.pyz \
+  -e myserver.main:main \
+  -p `python -c "import site; print(site.getsitepackages()[0])"`
 ```
 
 ### 5. Run the 'one executable' file

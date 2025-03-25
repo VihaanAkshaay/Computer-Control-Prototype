@@ -54,10 +54,6 @@ class TypeTool(BaseTool):
         """
         raise NotImplementedError("This tool does not support async calls.")
 
-import pyautogui
-import random
-from langchain_core.tools import BaseTool
-
 class ClickTool(BaseTool):
     name: str = "click_bottom_half"
     description: str = "Performs a mouse click at a specific point or a random point in the bottom half of the screen."
@@ -107,13 +103,6 @@ class ClickTool(BaseTool):
             return {
                 "messages": [{"role": "assistant", "content": f"Error performing the mouse click: {e}"}]
             }
-
-    def _arun(self, query: str) -> dict:
-        """
-        Asynchronous version of the tool. (Optional: Raise an error if async is not supported.)
-        """
-        raise NotImplementedError("This tool does not support async calls.")
-
 
     def _arun(self, query: str) -> dict:
         """
@@ -229,11 +218,6 @@ class LoadImageTool(BaseTool):
         Asynchronous version of the tool. (Optional: Raise an error if async is not supported.)
         """
         raise NotImplementedError("This tool does not support async calls.")
-    
-from PIL import Image
-import base64
-from io import BytesIO
-from langchain_core.tools import BaseTool
 
 class LoadAndAnalyzeImageTool(BaseTool):
     name: str = "load_and_analyze_image"
@@ -346,8 +330,6 @@ class OpenAppTool(BaseTool):
         Asynchronous version of the tool. Raise an error if async is not supported.
         """
         raise NotImplementedError("This tool does not support async calls.")
-
-
 
 class GoToWebpageTool(BaseTool):
     name: str = "go_to_webpage"
