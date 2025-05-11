@@ -93,7 +93,13 @@ python -c "import myserver.main; print('Success!')"
 ```
 
 ### 4. Create the one executable file
-```bash shiv . \ --compressed \ -o api_server.pyz \ -e myserver.main:main \ -p "$(python -c 'import site; print(site.getsitepackages()[0])')" chmod +x api_server.pyz ```
+```bash 
+shiv . \
+  --compressed \
+  -o api_server.pyz \
+  -e myserver.main:main \
+  -p "$(python -c 'import site; print(site.getsitepackages()[0])')"
+```
 
 ### 5. Run the 'one executable' file (make it executable first)
 ```
