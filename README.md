@@ -98,7 +98,7 @@ shiv . \
   --compressed \
   -o api_server.pyz \
   -e myserver.main:main \
-  -p "$(python -c 'import site; print(site.getsitepackages()[0])')"
+  -p "$(which python3)"
 ```
 
 ### 5. Run the 'one executable' file (make it executable first)
